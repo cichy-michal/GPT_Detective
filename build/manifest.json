@@ -1,0 +1,23 @@
+{
+  "name": "GPTD",
+  "description": "Wtyczka stworzona przez studentów Politechniki Wrocławskiej w ramach projektu zespołowego",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Open the popup"
+  },
+  "icons": {
+    "16": "icon.png",
+     "48": "icon.png",
+      "128": "icon.png"
+  },
+  "host_permissions": [
+    "https://GPTD-lb-433075978.us-east-1.elb.amazonaws.com/*"
+  ],
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "storage"
+  ]
+}
