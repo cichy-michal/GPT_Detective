@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  font-family: "Noto Sans", sans-serif;
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  
+}
+
+
+
+.main-container{
+  
+  height: 400px;
+  width: 600px;
+  display: flex;
+  
+}
+
+#little{
+  flex: 0 0 15%; /* elastyczny, niezmieniający się, 30% szerokości */
+    background-color: black;
+    
+    display: flex;
+    position: relative;
+}
+
+h1{
+  color: white;
+  font-size: 40px;
+  margin: 10px;
+}
+
+#margin{
+  
+  height: 300px;
+  width: 6px;
+  background: rgb(94,15,234);
+background: linear-gradient(180deg, rgba(94,15,234,1) 0%, rgba(211,13,151,1) 100%);
+  position: absolute;
+  right: 0;
+  top:10%;
+  border-radius: 10px;
+}
+
+
+
+
+#big{
+  padding: 20px;
+  flex: 0 0 85%; /* elastyczny, niezmieniający się, 70% szerokości */
+  background: rgb(1,0,8);
+  background: linear-gradient(90deg, rgba(1,0,8,1) 0%, rgba(52,57,59,1) 100%);
+    border-left: 10px red; /* kolor tła dla prawego kontenera */
+}
+
+p{
+  color: grey;
+  font-size: 15px;
+  margin: 10px;
+}
+
+form{
+  padding: 5px;
+  padding-top: 30px;
+}
+
+input{
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  
+}
+
+input[type="text"]{
+  background: #fff;
+  width: 300px;
+  height: 75px;
+  border: none;
+  outline: none;
+  padding: 0 25px;
+  border-radius: 25px 0 0 25px;
+}
+
+input[type="button"]{
+  position: relative;
+  border-radius: 0 25px 25px 0 ;
+  height: 75px;
+  width: 125px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: rgb(94,15,234);
+background: linear-gradient(180deg, rgba(94,15,234,1) 0%, rgba(211,13,151,1) 100%);
+}
+
+#guziczek{
+  position: relative;
+  border-radius: 0 25px 25px 0 ;
+  height: 75px;
+  width: 125px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: rgb(94,15,234);
+background: linear-gradient(180deg, rgba(94,15,234,1) 0%, rgba(211,13,151,1) 100%);
+position: relative;
+  display: inline-block;
+  font-size: 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+
+#loading{
+  position: relative;
+  border-radius: 0 25px 25px 0 ;
+  height: 75px;
+  width: 125px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: rgb(94,15,234);
+}
+
+
+input[type="button"]:hover{
+  background: rgb(94,15,234);}
+
+  #lds-ring {
+    /* change color here */
+    color: rgba(211,13,151,1);
+  }
+  
+#lds-ring,
+#lds-ring div {
+  box-sizing: border-box;
+}
+#lds-ring {
+  display: flex;
+    justify-content: center;
+  align-items: center;
+  position: relative;
+  
+  
+  height: 80px;
+}
+#lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid currentColor;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: currentColor transparent transparent transparent;
+}
+#lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+#lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+#lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.result{
+  background: rgba(211,13,151,1);
+
+    -webkit-background-clip: text; /* Wspierane przez Safari i starsze wersje Chrome */
+    background-clip: text; /* Standardowa składnia */
+    color: transparent; /* Ustawienie koloru tekstu na przezroczysty */
+    font-size: 25px;
+
+}
+
